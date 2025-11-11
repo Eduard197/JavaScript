@@ -448,45 +448,32 @@ let usersList = [
         }
     }
 ];
-// for(let user of usersList ){
-//     document.write(`<div class="users-box">
+document.write(`<div class="users-box">`)
+for(let user of usersList ){
+        document.write(`
+        <div class="user-block">
+
+                  <h2>${user.id} – ${user.name} – ${user.username} </h2>
+
+                  <h3>${user.email} – ${user.phone}</h3>
+
+             <div class="address-block">
+
+                  <p>City – ${user.address.city}</p>
+
+                   <p>Street – ${user.address.street}</p>
+
+                   <p>Suite – ${user.address.suite}</p>
+
+                   <p>Zip code – ${user.address.zipcode}</p>
+
+              </div>
+        </div>
+`)
+}
+document.write(`</div>`)
 //
-//         <div class="user-block">
-//
-//                 <h2>${user.id} – ${user.name} – ${user.username} </h2>
-//
-//                 <h3>${user.email} – ${user.phone}</h3>
-//
-//            <div class="address-block">
-//
-//                   <p>City – ${user.address.city}</p>
-//
-//                    <p>Street – ${user.address.street}</p>
-//
-//                    <p>Suite – ${user.address.suite}</p>
-//
-//                    <p>Zip code – ${user.address.zipcode}</p>
-//
-//             </div>
-//         </div>
-//     </div>`)
-// }
-window.onload = function() {
-    const usersBox = document.getElementById('usersBox');
-    for (const user of usersList) {
-        const userDiv = document.createElement('div');
-        userDiv.classList.add('user-block');
-        userDiv.innerHTML = `
-            <h2>${user.id} – ${user.name} – ${user.username}</h2>
-            <h3>${user.email} – ${user.phone}</h3>
-            <p>City – ${user.address.city}</p>
-            <p>Street – ${user.address.street}</p>
-            <p>Suite – ${user.address.suite}</p>
-            <p>Zip code – ${user.address.zipcode}</p>
-        `;
-        usersBox.appendChild(userDiv);
-    }
-};
+
 
 
 

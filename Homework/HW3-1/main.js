@@ -115,7 +115,7 @@ console.log(g);
 let h = [2,17,13,6,22,31,45,66,100,-18];
 console.log('');
 for (let i = h.length-1; i>=0; i--){
-    console.log(`${i}:${h[i]}`);
+    console.log(h[i]);
 }
 //
 // 9. всі попередні завдання (окрім 8), але у зворотньому циклі (задом наперед)(for)
@@ -125,8 +125,7 @@ for (let i = h.length-1; i>=0; i--){
 let l = [2,17,13,6,22,31,45,66,100,-18];
 console.log('');
 for(let i = l.length-1; i>=0; i--){
-    let element = l[i];
-    console.log(`${i}:${element}`);
+    console.log(l[i]);
 }
 // 3.1 перебрати циклом while та вивести  числа тільки з непарним індексом
 
@@ -136,7 +135,7 @@ let indexm = m.length -1;
 while(indexm>=0){
     if(indexm%2!==0){
         let element = m[indexm];
-        console.log(`${indexm}:${element}`);
+        console.log(element);
     }
     indexm--;
 }
@@ -147,7 +146,7 @@ console.log(``);
 for( let i = n.length -1; i >=0; i --){
     if(i % 2 !==0){
         let element = n[i];
-        console.log(`${i}:${element}`);
+        console.log(element);
     }
 }
 // 5.1 перебрати циклом while та вивести  числа тільки парні  значення
@@ -155,10 +154,10 @@ for( let i = n.length -1; i >=0; i --){
 let o =  [2,17,13,6,22,31,45,66,100,-18];
 console.log(``);
 let indexo = o.length -1;
-while(indexo>=o){
+while(indexo>=0){
     let element = o[indexo];
     if(element%2===0){
-        console.log(`${indexo}:${element}`);
+        console.log(element);
     }
     indexo--;
 }
@@ -169,7 +168,7 @@ console.log(``);
 for(let i = p.length -1; i>=0;i--){
     let element = p[i];
     if(element % 2===0){
-        console.log(`${i}:${element}`);
+        console.log(element);
     }
 }
 

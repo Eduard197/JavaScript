@@ -34,12 +34,12 @@ console.log(list[4]);
 //
 // 1. перебрати його циклом while
 let numbers = [2,17,13,6,22,31,45,66,100,-18];
-let index = 0;
+let i = 0;
 console.log(``);
-while (index<numbers.length){
-    let number = numbers[index];
+while (i<numbers.length){
+    let number = numbers[i];
     console.log(number)
-    index++;
+    i++;
 }
 //
 //     2. перебрати його циклом for
@@ -58,7 +58,7 @@ console.log(``);
 let indexc = 0;
 while (indexc<numbersc.length){
     if (indexc%2!==0){
-        let number = numbersc[indexc];
+        let number = numbersc[i];
         console.log(number);
     }
     indexc++;
@@ -78,8 +78,8 @@ let numberse = [2,17,13,6,22,31,45,66,100,-18];
 console.log(``);
 let indexe = 0;
 while (indexe<numberse.length){
-    if (numberse[indexe] % 2 === 0){
-        let numbere = numberse[indexe];
+    if (numberse[i] % 2 === 0){
+        let numbere = numberse[i];
         console.log(numbere);
     }
     indexe++;
@@ -88,11 +88,11 @@ while (indexe<numberse.length){
 //
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 
-let f = [2,17,13,6,22,31,45,66,100,-18];
+const f = [2,17,13,6,22,31,45,66,100,-18];
 for (let i = 0;i <f.length;i++){
-    let element = f[i];
-    if(element%2===0){
-        console.log(`${i}:${element}`);
+    const number = f[i];
+    if(number%2===0){
+        console.log(`${i}:${number}`);
     }
 }
 
@@ -101,8 +101,8 @@ for (let i = 0;i <f.length;i++){
 
 let g = [2,17,13,6,22,31,45,66,100,-18];
 for(let i = 0;i<g.length;i++){
-    let element = g[i];
-    if(element!==0&&element% 3===0){
+    let number = g[i];
+    if(number!==0&&number% 3===0){
         g[i] = 'okten';
     }
 }

@@ -491,3 +491,137 @@ let numberjj =jj.filter(function(element) {
 });
 
 console.log( numberjj)
+
+
+
+
+// – Дано 2 масиви з рівною кількістю об’єктів.
+
+    // Масиви:
+
+let usersWithId = [
+
+    {id: 1, name: 'vasya', age: 31, status: false},
+
+{id: 2, name: 'petya', age: 30, status: true},
+
+{id: 3, name: 'kolya', age: 29, status: true},
+
+{id: 4, name: 'olya', age: 28, status: false}
+
+];
+
+
+
+let citiesWithId = [
+
+    {user_id: 3, country: 'USA', city: 'Portland'},
+
+{user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+
+{user_id: 2, country: 'Poland', city: 'Krakow'},
+
+{user_id: 4, country: 'USA', city: 'Miami'}
+
+];
+
+
+
+// З’єднати в один об’єкт користувача та місто з відповідними “id” та “user_id” .
+//
+// Записати цей об’єкт в новий масив
+
+// Example:
+//
+//     let usersWithCities = [
+//
+//         {
+//
+//             id: 1, // <===
+//
+//             name: ‘vasya’,
+//
+// age: 31,
+//
+//     status: false,
+//
+//     address: {
+//
+//     user_id: 1, // <===
+//
+//         country: ‘Ukraine’,
+//
+//     city: ‘Ternopil’
+//
+// }
+//
+// },
+
+let usersWithCities = [];
+
+for (let i = 0; i < usersWithId.length; i++) {
+    let user = usersWithId[i];
+    let city;
+    for (let j = 0; j < citiesWithId.length; j++) {
+        if (citiesWithId[j].user_id === user.id) {
+            city = citiesWithId[j];
+        }
+    }
+    usersWithCities.push({
+        ...user,
+        address: city
+    });
+}
+
+console.log(usersWithCities);
+
+// – Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+
+let numberA = [ 1, 2, 3, 5, 7, 9, 56, 8, 67, 4 ];
+for(let i =0;i<numberA.length;i++){
+    if(numberA[i]%2===0){
+        console.log(numberA[i]);
+    }
+}
+
+// Взяти масив з 10 чисел або створити його. Створити 2-й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+
+let original = [ 1, 2, 3, 5, 7, 9, 56, 8, 67, 4 ];
+let copy =[];
+for (let i = 0;i<original.length;i++) {
+    copy[i] = original[i];
+}
+console.log(copy);
+
+// Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for зібрати всі букви в слово.
+//
+let letters = [ 'a', 'b', 'c'];
+let word = ``
+for(let i = 0; i<letters.length; i++){
+    word+=letters[i];
+}
+console.log(word);
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу while зібрати всі букви в слово.
+//
+let arr = [ 'a', 'b', 'c'];
+let wordA =``
+let indexf = 0;
+while (indexf<arr.length){
+    wordA+=arr[indexf];
+    indexf++;
+}
+console.log(wordA);
+
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for of зібрати всі букви в слово.
+
+let arra = [ 'a', 'b', 'c'];
+let wordB =``;
+for(let letterB of arra){
+    wordB+=letterB;
+}
+console.log(wordB);
+
+
+
+

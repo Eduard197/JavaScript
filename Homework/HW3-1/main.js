@@ -1,365 +1,354 @@
-// #WpkK0ZH1
+#WpkK0ZH1
 //
 // –створити масив з:
 //
 //     – з 5 числових значень
 //
-// – з 5 стрічкових значень
+// – з 5 стічкових значень
 //
 // – з 5 значень стрічкового, числового та булевого типу
 //
 // – та вивести його в консоль
 
-let number =  [1,2,3,4,5.1];
-console.log(number);
-
-let String = ['Привіт','Привіт','Привіт','Привіт','Привіт'];
-console.log(String);
-
-let boolean = [true,false,true,false,true];
-console.log(boolean);
-
+let array = [1,2,3,4,5.4,'okten','hello','twenty','class','scool',true,false,true,true,false];
+console.log(array);
 
 
 // #4aDbSgh
 //
 // — Створити пустий масив. Наповнити його будь-якими значеннями, звертаючись до конкретного індексу. Вивести в консоль
+const arr = [1,2,3,4,5.4,'okten','hello','twenty','class','scool',true,false,true,true,false];
+console.log(arr[11]);
 
-let list = ['hello',47,3.14,true,'фінал']
-console.log(list[4]);
 
 // #qLQLJSeN7i
 //
 // – є масив [2,17,13,6,22,31,45,66,100,-18] :
 //
 // 1. перебрати його циклом while
-let numbers = [2,17,13,6,22,31,45,66,100,-18];
-let i = 0;
-console.log(``);
-while (i<numbers.length){
-    let number = numbers[i];
-    console.log(number)
-    i++;
+
+let numbars =  [2,17,13,6,22,31,45,66,100,-18];
+let index = 0;
+while(index<numbars.length){
+    let numbar = numbars[index];
+    console.log(numbar);
+    index++;
 }
+
 //
 //     2. перебрати його циклом for
-
-let  b =[2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-for(let i =0; i< b.length;i++){
-    console.log(b[i]);
-}
+// let numbars = [2,17,13,6,22,31,45,66,100,-18];
+// for(let i =0;i< numbars.length; i ++){
+//     console.log(numbars[i]);
+// }
 
 //
 //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
-
-let numbersc = [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-let indexc = 0;
-while (indexc<numbersc.length){
-    if (indexc%2!==0){
-        let number = numbersc[i];
-        console.log(number);
+let numbarsA = [2,17,13,6,22,31,45,66,100,-18];
+let indexA = 0;
+while(indexA < numbarsA.length){
+    if(indexA %2 !== 0){
+        let numbar = numbarsA[indexA];
+        console.log(numbar);
     }
-    indexc++;
+    indexA ++;
 }
 //
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
-let  d =[2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-for(let i = 1;i<d.length;i+=2){
-    console.log(d[i]);
+
+let numbarsB =  [2,17,13,6,22,31,45,66,100,-18];
+for(let indexB = 0; indexB < numbarsB.length; indexB ++){
+    if( indexB %2 !== 0){
+        console.log(numbarsB[indexB]);
+    }
 }
+
 //
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
 
-let numberse = [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-let indexe = 0;
-while (indexe<numberse.length){
-    if (numberse[i] % 2 === 0){
-        let numbere = numberse[i];
-        console.log(numbere);
+
+let numbarsC = [2,17,13,6,22,31,45,66,100,-18];
+let indexC = 0;
+while (indexC < numbarsC.length){
+    if( indexC %2 === 0){
+        let numbarC = numbarsC[indexC];
+        console.log(numbarC);
     }
-    indexe++;
+    indexC ++;
+
 }
 
 //
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 
-const f = [2,17,13,6,22,31,45,66,100,-18];
-for (let i = 0;i <f.length;i++){
-    const number = f[i];
-    if(number%2===0){
-        console.log(`${i}:${number}`);
+
+let numbarsD =  [2,17,13,6,22,31,45,66,100,-18];
+for( let indexD = 0; indexD < numbarsD.length; indexD ++){
+    if(indexD %2 !== 0){
+        console.log(numbarsD[indexD]);
     }
 }
 
-//
 // 7. замінити кожне число, кратне 3, на слово “okten”
 
-let g = [2,17,13,6,22,31,45,66,100,-18];
-for(let i = 0;i<g.length;i++){
-    let number = g[i];
-    if(number!==0&&number% 3===0){
-        g[i] = 'okten';
+let numbarsE = [2,17,13,6,22,31,45,66,100,-18];
+for(let indexE = 0; indexE<numbarsE.length; indexE ++){
+    if(indexE %3 === 0){
+        numbarsE[indexE] = 'okten';
+        console.log(numbarsE[indexE]);
     }
 }
-console.log(g);
-
 //
 // 8. вивести масив у зворотньому порядку.
 
-
-let h = [2,17,13,6,22,31,45,66,100,-18];
-console.log('');
-for (let i = h.length-1; i>=0; i--){
-    console.log(h[i]);
+let numbarsK = [2,17,13,6,22,31,45,66,100,-18];
+for(let i = numbarsK.length -1; i > 0; i --){
+    if(i %3 === 0){
+        numbarsK[i] = 'okten';
+        console.log(numbarsK[i]);
+    }
 }
+
+
 //
-// 9. всі попередні завдання (окрім 8), але у зворотньому циклі (задом наперед)(for)
+// 9. всі попередні завдання (окрім 8), але у зворотньому циклі (задом наперед)
 
-// 2.1 перебрати його циклом for
+// / 1. перебрати його циклом while
 
-let l = [2,17,13,6,22,31,45,66,100,-18];
-console.log('');
-for(let i = l.length-1; i>=0; i--){
-    console.log(l[i]);
+let numbarsF =  [2,17,13,6,22,31,45,66,100,-18];
+let indexF = numbarsF.length-1;
+while(indexF >= 0){
+    let numbar = numbarsF[indexF];
+    console.log(numbar);
+    indexF--;
 }
-// 3.1 перебрати циклом while та вивести  числа тільки з непарним індексом
+// 2. перебрати його циклом for
+let numbarsJ = [2,17,13,6,22,31,45,66,100,-18];
+for(let indexJ = numbarsJ.length -1;indexJ >= 0; indexJ --){
+    console.log(numbarsJ[indexJ]);
+}
 
-let m = [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-let indexm = m.length -1;
-while(indexm>=0){
-    if(indexm%2!==0){
-        let element = m[indexm];
-        console.log(element);
+// 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+let numbarsH = [2,17,13,6,22,31,45,66,100,-18];
+let indexH = numbarsA.length-1;
+while(indexH >= 0){
+    if(indexH %2 !== 0){
+        let numbar = numbarsH[indexH];
+        console.log(numbar);
     }
-    indexm--;
+    indexH --;
 }
-// 4.1 перебрати циклом for та вивести  числа тільки з непарним індексом
 
-let n = [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-for( let i = n.length -1; i >=0; i --){
-    if(i % 2 !==0){
-        let element = n[i];
-        console.log(element);
-    }
-}
-// 5.1 перебрати циклом while та вивести  числа тільки парні  значення
+// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
-let o =  [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-let indexo = o.length -1;
-while(indexo>=0){
-    let element = o[indexo];
-    if(element%2===0){
-        console.log(element);
-    }
-    indexo--;
-}
-// 6.1 перебрати циклом for та вивести  числа тільки парні  значення
 
-let p = [2,17,13,6,22,31,45,66,100,-18];
-console.log(``);
-for(let i = p.length -1; i>=0;i--){
-    let element = p[i];
-    if(element % 2===0){
-        console.log(element);
+let numbarsP =  [2,17,13,6,22,31,45,66,100,-18];
+for(let indexP = numbarsP.length-1; indexP >= 0 ; indexP --){
+    if( indexP %2 !== 0){
+        console.log(numbarsP[indexP]);
     }
 }
+
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
+
+
+let numbarsO = [2,17,13,6,22,31,45,66,100,-18];
+let indexO = numbarsO.length -1;
+while(indexO >= 0){
+    let numbarO = numbarsO[indexO];
+    console.log(numbarO);
+    indexO --;
+}
+
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
+
+let numbarsQ = [2,17,13,6,22,31,45,66,100,-18];
+for(let indexQ = numbarsQ.length-1; indexQ >= 0; indexQ --){
+    if(indexQ %2===0){
+        console.log(numbarsQ[indexQ]);
+    }
+}
+
 // #yHAwJOyiC
 //
 // – Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 
-let r = [3,4,5,6,7,8,9,11,13,3.7];
-console.log(``);
-for( let element of r){
-    console.log(element);
+let numbarsX = [2,17,13,6,22,31,45,66,100,-18];
+for(let numbarX of numbarsX){
+    console.log(numbarX);
 }
 
-// #GamKju89ob
-//
-// – Створити масив з 10 строкових елементів. Вивести в консоль всі його елементи в циклі.
+// Створити масив з 10 строкових елементів. Вивести в консоль всі його елементи в циклі.
 
-let s = ['hello','hello okten','hello world','hello okten','hello world','hello okten','hello world','hello okten','hello world','hello'];
-console.log(``);
-for( let element of s){
-    console.log(element);
+let textes = ['hello','hello okten','hello world','hello okten','hello world','hello okten','hello world','hello okten','hello world','hello'];
+for(let texte of textes ){
+    console.log(texte);
 }
 
 // #Bm76xmg
 //
 // – Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 
-let t = ['hello','hello okten','hello world','hello okten','hello world',1,2,3,4,5];
-console.log(``);
-for( let element of t){
-    console.log(element);
+let textesA = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+for(let texteA of textesA){
+    console.log(texteA);
 }
-
 
 // #u3vmD0YJXh
 //
 // – Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 
-
-let q = ['hello','hello okten',1,2,3,false,true,false,true];
-console.log(``);
-for (let element of q){
-if(typeof element==='boolean'){
-    console.log(element);
-}
+let textesB = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+for(let texteB of textesB){
+    if(typeof texteB === 'boolean'){
+        console.log(texteB);
+    }
 }
 // #9stMq2ou
 //
 // – Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-
-let w = ['hello','hello okten',1,2,3,false,true,false,true];
-console.log(``);
-for(let element of w){
-    if (typeof element===`number`){
-        console.log(element);
+let textesC = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+for(let texteC of textesC){
+    if(typeof texteC === 'number'){
+        console.log(texteC);
     }
 }
-
 
 // #mK4pmM4
 //
 // – Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
 
-let z = ['hello','hello okten','hello',1,2,3,false,true,false,true];
-console.log(``);
-for(let element of z){
-    if (typeof element===`string`){
-        console.log(element);
+let textesD = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+for(let texteD of textesD){
+    if(typeof texteD === 'string'){
+        console.log(texteD)
     }
 }
-
 // #0pm3EyTKy9
 //
 // – Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-
-let x = ['hello','hello okten','hello',1,2,3,false,true,false,true];
-console.log(``)
-console.log(x[0]);
-console.log(x[1]);
-console.log(x[2]);
-console.log(x[3]);
-console.log(x[4]);
-console.log(x[5]);
-console.log(x[6]);
-console.log(x[8]);
-console.log(x[9]);
-
+let textesE = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+console.log(textesE[0]);
+console.log(textesE[1]);
+console.log(textesE[2]);
+console.log(textesE[3]);
+console.log(textesE[4]);
+console.log(textesE[5]);
+console.log(textesE[6]);
+console.log(textesE[7]);
+console.log(textesE[8]);
+console.log(textesE[9]);
 
 // #mDMWMW5a
 //
 // – Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-
-
-for (let i = 0; i <=10; i++) {
-    document.write(`<div>Okten is cool ${i}</div>`);
-    console.log(`(Okten is cool):${i}`);
+for(let indexZ = 0; indexZ < 10; indexZ ++){
+    document.write(`<p>hello okten ${indexZ}</p>`);
+    console.log(`hello okten ${indexZ}`);
 }
-
 
 // #4sXhaa5YMM
 //
 // – Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
-for (let i = 0; i <=100; i++) {
-    document.write(`<div>Okten is cool ${i}</div>`);
-    console.log(`(Okten is cool):${i}`);
+
+for(let indexY = 0;indexY < 100;indexY ++){
+    document.write(`<p>hello okten ${indexY}</p>`);
+    console.log(`hello okten ${indexY}`);
 }
 
+// #s24slNyz7
+//
+// – Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+for (let indexX = 0;indexX < 100; indexX +=2){
+    document.write(`<p>hello okten ${indexX}</p>`);
+    console.log(`hello okten ${indexX}`);
+}
+//
 // #zananT5FR1
 //
 // – Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 
+for(let indexL = 0;indexL < 100;indexL +=2){
 
-for (let i = 0; i <=100;i+=2) {
-    document.write(`<div>Okten is cool ${i}</div>`);
-    console.log(`(Okten is cool):${i}`);
+    document.write(`<p>hello world ${indexL}</p>`);
+    console.log(`hello world ${indexL}`);
+
 }
+
 
 // #Tfrwls7FM
 //
 // – Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
-
-for (let i = 1; i <=100;i+=2) {
-    document.write(`<div>Okten is cool ${i}</div>`);
-    console.log(`(Okten is cool):${i}`);
+for(let i = 0;i < 100;i ++){
+    if(i %2 !== 0){
+        document.write(`<h>Okten scool ${i}</h>`);
+        console.log(`Okten scool ${i}`)
+    }
 }
 
-//
 // #reLkOkTB29Q
 //
 // створити масив книжок (назва, кількість сторінок, автори , жанри).
 
-const books = [
+let Books = [
     {title:'A',pageCount:100,authors: [{name: 'asdfghhj',age:20}, {name: 'zxcvbn', age: 20}],genre:'AA'},
     {title:'Ba',pageCount:110,authors: [{name: 'asdfghhj',age:20}],genre:'AA'},
-    {title:'Cbqwea',pageCount:130,authors: [{name: 'asdfghhj',age:20}],genre:'AAA'},
-    {title:'Dcjlk',pageCount:109,authors: [{name: 'asdfghhj',age:20}],genre:'AA'},
+    {title:'Cbqweavbnm',pageCount:130,authors: [{name: 'asdfghhj',age:20}],genre:'AAA'},
+    {title:'Dcjlk',pageCount:109,authors: [{name: 'asdfghhj',age:20}],genre:'AABB'},
     {title:'Eeezxcvb',pageCount:150,authors: [{name: 'asdfghhj',age:20}],genre:'AA'},
 ];
-
 //
 // – знайти найбільшу книжку.
-let maxBook = books[0];
-for(const book of books){
-    if(book.pageCount>maxBook.pageCount){
-        maxBook = book;
+let maxBook = Books[0];
+for(let Book of Books){
+    if(Book.pageCount > maxBook.pageCount){
+        maxBook = Book;
     }
 }
 console.log(maxBook);
 
 //
 // – знайти книжку/ки з найбільшою кількістю жанрів
-
-let maxgenre = books[0];
-for(const book of books){
-    if(book.genre.length>maxgenre.genre.length){
-        maxgenre = book;
+let maxbook = Books[0];
+for (let book of Books){
+    if(book.genre > maxbook.genre){
+        maxbook = book;
     }
 }
-console.log(maxgenre);
+console.log(maxbook);
 
 //
 // – знайти книжку/ки з найдовшою назвою
-
-let maxtitle = books[0];
-for(const book of books){
-    if(book.title.length>maxtitle.title.length){
-        maxtitle = book;
+let Maxbook = Books[0];
+for(let book of Books){
+    if(book.title > Maxbook.title){
+        Maxbook = book;
     }
 }
-console.log(maxtitle);
+console.log(Maxbook);
 //
 // – знайти книжку/ки, які писали 2 автори
 
-let maxauthors = books[0];
-for(const book of books){
-    if(book.authors===2){
-        maxauthors = book;
+let maXbook = Books[0];
+for(let book of Books){
+    if(book.authors.length === 2){
+        maXbook = book;
+        console.log(maXbook);
     }
 }
-console.log(maxauthors);
+
 
 //
 // – знайти книжку/ки, які писав 1 автор
 
-
-let oneauthors = books[0];
-for(const book of books){
-    if (book.authors.length===1){
-        oneauthors=book;
-        console.log(oneauthors);
+let MaXbook = Books[0];
+for(let book of Books){
+    if(book.authors.length === 1){
+        MaXbook = book;
+        console.log(MaXbook);
     }
 }
 
@@ -368,260 +357,231 @@ for(const book of books){
 //
 //     a. заповнити його 50 парними числами за допомоги циклу.
 
-let aa =[];
-for(let i=0; i < 50; i++){
-    aa.push(i*2);
+let arrayA = [ ];
+for(let i = 0; i < 50; i ++){
+    let numbar = i * 2;
+    arrayA = numbar;
+    console.log(arrayA);
 }
-console.log(aa);
 //
 //     b. заповнити його 50 непарними числами за допомоги циклу.
 
-let bb = [];
-for(let i =0; i <50; i++){
-    bb.push(i*2+1);
+let arrayB = [];
+for(let i = 0; i < 50; i ++){
+    let namber = i *2+1;
+    arrayB = namber;
+    console.log(arrayB);
 }
-console.log(bb);
 //
 //     c. Заповнити масив 20-ма рандомними числами. (Google: Generate random number JS)
-
-
-let сс = [];
-
-for (let i = 0; i < 20; i++) {
-    сс.push(Math.floor(Math.random() * 100));
+let arrayC = [];
+for(let i = 0; i < 20; i ++){
+    let namber = Math.random() *100;
+    arrayC = Math.random() *100;
+    console.log(arrayC);
 }
-
-console.log(сс);
-
 
 //
 // d. Заповнити масив 20-ма рандомними числами в діапазоні від 8 до 732 (Google: Generate random number JS)
 
-
-let dd = [];
-
-for (let i = 0; i < 20; i++) {
-    dd.push(Math.floor(Math.random()* (732-8+1))+8);
+let arrayD = [];
+for(let i = 0; i < 20; i ++){
+    let namber = Math.random(8) * 732;
+    arrayD = Math.random(8) * 732;
+    console.log(`${i}:${arrayD} `);
 }
-
-console.log(dd);
-
+//
 // 2. Вивести за допомогою console.log кожен третій елемент
 
-
-
-for (let i = 2; i < dd.length; i += 3) {
-
-    console.log(dd[i]);
+let arrayE = [8,45,78,37,58,67,78,56,34,23,21,12,90,567,567,234,34,908,25,456];
+for( let i = 2; i < arrayE.length; i += 3){
+    console.log(arrayE[i]);
 }
 
 //
 // 3. Вивести за допомогою console.log кожен третій елемент, тільки якщо цей елемент є парним.
 
-
-
-let ff = dd;
-
-for (let i = 2; i < dd.length; i += 3) {
-    if (ff[i] % 2 === 0) {
-        console.log(ff[i]);
+let arrayI = [8,45,78,37,58,67,78,56,34,23,21,12,90,567,567,234,34,908,25,456];
+console.log(``)
+for( let i = 2; i < arrayI.length; i +=3){
+    if(i %2 ===0){
+        console.log(arrayI[i]);
     }
 }
 
 //
 // 4. Вивести за допомогою console.log кожен третій елемент, тільки якщо цей елемент є парним, та записати їх в новий масив
 
-let ei = [];
-
-for (let i = 0; i < 20; i++) {
-    ei.push(Math.floor(Math.random() * (732 - 8 + 1)) + 8);
-}
-console.log(ei);
-
-let fi = ei;
-
-for (let i = 2; i < fi.length; i += 3) {
-    if (fi[i] % 2 === 0) {
-        console.log(fi[i]);
+let arrayF =  [8,45,78,37,58,67,78,56,34,23,21,12,90,567,567,234,34,908,25,456];
+console.log(``);
+let Array =[];
+let newindex = 0;
+for(let i = 2; i < arrayF.length; i +=3){
+    let element = arrayF[i]
+    if (element % 2 === 0) {
+        Array[newindex] = element;
+        newindex++;
     }
 }
+console.log(Array);
+
+
 // 5. Вивести кожен елемент масиву, сусід справа якого є парним
 //
 // EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
 
-
-let Numbers = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
-console.log(``)
-for (let i = 0; i < Numbers.length - 1; i++) {
-
-    let right = Numbers[i + 1];
-
-
-    if (right % 2 === 0) {
-
-        console.log(Numbers[i]);
+let number =  [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+for(let i = 0; i < number.length; i ++){
+    let right = number[i+1];
+    if(right %2 ===0){
+        console.log(number[i]);
     }
 }
 
+//
+// 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+let numberA = [100,250,50,168,120,345,188];
+let sumnumberA = 0;
+let check = 0;
+for(let i =0; i < numberA.length; i++){
+    sumnumberA = sumnumberA + numberA[i];
+    check = sumnumberA / numberA.length;
+    console.log(sumnumberA);
+    console.log(check);
+}
+
+
 // 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
 
-
-
-let hh = [];
-for (let i = 0; i < 10; i++) {
-    let randomNumber = Math.floor(Math.random() * 100);
-    hh.push(randomNumber);
+let elementQ = 0;
+let arrayT = [];
+let arrayP = [];
+let newIndex = 0;
+for( let i =0; i < 20; i ++){
+    let randomNamber = Math.random() * 100;
+    arrayT[newIndex] = randomNamber;
+    let elementQ = randomNamber * 5;
+    arrayP[newIndex] = elementQ;
+    newindex  ++;
 }
-console.log(hh);
-let multiplyhh = hh.map(function(element) {
-    return element * 5;
-});
+console.log(arrayP);
+console.log(arrayT);
 
-console.log( multiplyhh);
-
-
-
+//
 // 8. Створити масив з будь-якими значеннями (стрінги, числа, і тд…). пройтись по ньому, і, якщо елемент є числом, додати його в інший масив.
 
 
-let jj = [ "hello", 123, true, "world", 45.67, null, undefined, -88, "end" ];
-console.log(jj);
-let numberjj =jj.filter(function(element) {
-    return typeof element === 'number';
-});
-
-console.log( numberjj)
-
-
-
-
-// – Дано 2 масиви з рівною кількістю об’єктів.
-
-    // Масиви:
-
-let usersWithId = [
-
-    {id: 1, name: 'vasya', age: 31, status: false},
-
-{id: 2, name: 'petya', age: 30, status: true},
-
-{id: 3, name: 'kolya', age: 29, status: true},
-
-{id: 4, name: 'olya', age: 28, status: false}
-
-];
+let list = ['hello','hello okten', 1,'hello okten',2 ,'hello okten',true,'hello okten',false,'hello'];
+let newList =[];
+let newindexA = 0;
+for(let i = 0; i < list.length; i ++){
+    if(typeof list[i] === 'number'){
+        newList[newindexA] = list[i];
+        newindexA ++;
+    }
+}
+console.log(newList);
 
 
-
-let citiesWithId = [
-
-    {user_id: 3, country: 'USA', city: 'Portland'},
-
-{user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-
-{user_id: 2, country: 'Poland', city: 'Krakow'},
-
-{user_id: 4, country: 'USA', city: 'Miami'}
-
-];
-
-
-
+// Дано 2 масиви з рівною кількістю об’єктів.
+//
+//     Масиви:
+//
+// let usersWithId = [
+//
+//     {id: 1, name: ‘vasya’, age: 31, status: false},
+//
+// {id: 2, name: ‘petya’, age: 30, status: true},
+//
+// {id: 3, name: ‘kolya’, age: 29, status: true},
+//
+// {id: 4, name: ‘olya’, age: 28, status: false}
+//
+// ];
+//
+//
+//
+// let citiesWithId = [
+//
+//     {user_id: 3, country: ‘USA’, city: ‘Portland’},
+//
+// {user_id: 1, country: ‘Ukraine’, city: ‘Ternopil’},
+//
+// {user_id: 2, country: ‘Poland’, city: ‘Krakow’},
+//
+// {user_id: 4, country: ‘USA’, city: ‘Miami’}
+//
+// ];
+//
+//
+//
 // З’єднати в один об’єкт користувача та місто з відповідними “id” та “user_id” .
 //
 // Записати цей об’єкт в новий масив
-
-// Example:
-//
-//     let usersWithCities = [
-//
-//         {
-//
-//             id: 1, // <===
-//
-//             name: ‘vasya’,
-//
-// age: 31,
-//
-//     status: false,
-//
-//     address: {
-//
-//     user_id: 1, // <===
-//
-//         country: ‘Ukraine’,
-//
-//     city: ‘Ternopil’
-//
-// }
-//
-// },
 
 let usersWithCities = [];
 
 for (let i = 0; i < usersWithId.length; i++) {
     let user = usersWithId[i];
     let city;
+    let newindex = 0;
     for (let j = 0; j < citiesWithId.length; j++) {
         if (citiesWithId[j].user_id === user.id) {
             city = citiesWithId[j];
         }
     }
-    usersWithCities.push({
-        ...user,
-        address: city
-    });
-}
 
-console.log(usersWithCities);
+}
 
 // – Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 
-let numberA = [ 1, 2, 3, 5, 7, 9, 56, 8, 67, 4 ];
-for(let i =0;i<numberA.length;i++){
-    if(numberA[i]%2===0){
-        console.log(numberA[i]);
+let numbers = [1,2,3,4,6,7,8,9,22,335];
+for(let i = 0; i < numbers.length; i ++){
+    if(numbers[i] %2 === 0){
+        console.log(numbers[i]);
     }
 }
-
-// Взяти масив з 10 чисел або створити його. Створити 2-й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
-
-let original = [ 1, 2, 3, 5, 7, 9, 56, 8, 67, 4 ];
-let copy =[];
-for (let i = 0;i<original.length;i++) {
-    copy[i] = original[i];
-}
-console.log(copy);
-
-// Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for зібрати всі букви в слово.
 //
-let letters = [ 'a', 'b', 'c'];
-let word = ``
-for(let i = 0; i<letters.length; i++){
-    word+=letters[i];
+//
+//
+// – Взяти масив з 10 чисел або створити його. Створити 2-й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+
+let numbersA = [1,2,3,4,6,7,8,9,22,335];
+let newNumbersA = [];
+let newindexB = 0;
+for(let i = 0; i < numbersA.length; i ++){
+    newNumbersA[newindexB] = numbersA[i];
+    newindexB ++;
 }
-console.log(word);
+console.log(newNumbersA);
+
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for зібрати всі букви в слово.
+let litters = ['a', 'b', 'c'];
+let litter = ``;
+for(let  i = 0; i < litters.length; i ++){
+    litter += litters[i];
+}
+console.log(litter);
+
 // – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу while зібрати всі букви в слово.
-//
-let arr = [ 'a', 'b', 'c'];
-let wordA =``
-let indexf = 0;
-while (indexf<arr.length){
-    wordA+=arr[indexf];
-    indexf++;
+
+
+let littersA = ['a', 'b', 'c'];
+let litterA =``;
+let Index = 0;
+while(Index < littersA.length){
+    litterA += littersA[Index];
+    Index ++;
 }
-console.log(wordA);
-
-
+console.log(litterA);
 // – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for of зібрати всі букви в слово.
 
-let arra = [ 'a', 'b', 'c'];
-let wordB =``;
-for(let letterB of arra){
-    wordB+=letterB;
+let littersB = ['a', 'b', 'c'];
+let litterB = ``
+for(litter of littersB){
+    litterB += litter;
 }
-console.log(wordB);
-
-
+console.log(litterB);
 
 

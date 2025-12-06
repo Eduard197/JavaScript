@@ -160,25 +160,33 @@ console.log(swap([11,22,33,44],0,1));
 //
 // Приклад exchange(10000,[{currency:’USD’,value:25},{currency:’EUR’,value:42}],’USD’) // => 400
 
+
+
+
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
-    const targetCurrency = currencyValues.find(item => item.currency === exchangeCurrency);
-    if (!targetCurrency) {
-        return `Валюта з кодом ${exchangeCurrency} не знайдена.`;
+    let currencyObj = null;
+
+    // Шукаємо потрібну валюту
+    for (let i = 0; i < currencyValues.length; i++) {
+        if (currencyValues[i].currency === exchangeCurrency) {
+            currencyObj = currencyValues[i];
+            break;
+        }
     }
-    const result = sumUAH / targetCurrency.value;
-    return result;
+
+    if (!currencyObj) {
+        return 0;
+    }
+
+    return sumUAH / currencyObj.value;
 }
+console.log(exchange(10000,[{currency: 'USD', value: 25}, {currency: 'EUR', value: 42}],`USD`));
 
-const currencyRates = [
-    { currency: 'USD', value: 40 },
-    { currency: 'EUR', value: 42 }
-];
 
-const amountUAH = 10000;
-const target = 'USD';
 
-const exchangedAmount = exchange(amountUAH, currencyRates, target);
-console.log(`Сума ${amountUAH} UAH дорівнює ${exchangedAmount} ${target}`);
+
+
+
 
 
 

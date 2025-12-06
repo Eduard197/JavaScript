@@ -2,12 +2,12 @@
 // #I2XsG6f
 //
 // – створити функцію, яка обчислює та повертає площу прямокутника зі сторонами  а і б
-function rectangl(a, b){
+function square(a, b){
     const result = a * b;
     console.log(result);
     return result;
 }
-rectangl(5,10)
+square(5,10);
 
 
 // #ETGAxbEn8l
@@ -50,7 +50,7 @@ foobarA(`hello`);
 // #hOL6126
 //
 // – створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-function foobarC(text){
+function foobarrC(text){
     document.write(`
     <ul>
         <li>${text}</li>
@@ -59,7 +59,7 @@ function foobarC(text){
     </ul>`);
 
 }
-foobarC('Heloo Okten');
+foobarrC('Heloo Okten');
 
 // #0Kxco1edSN
 //
